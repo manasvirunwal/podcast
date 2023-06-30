@@ -1,13 +1,197 @@
 body {
+  font-family: Arial, sans-serif;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+  padding: 0;
+  }
+  
+  .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  }
+  
+  /* components/Header.css */
+  header {
+  background-color: #a408b3d5;
+  color: #fff;
+  padding: 1rem;
+  }
+  
+  /* header img {
+  height: 20px;
+  } */
+  
+  header nav ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 10px;
+  }
+  
+  header nav ul li {
+  margin-right: 1rem;
+  padding: 10px;
+ 
+ 
+  }
+  
+  header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+   margin-left: 20px;
+  }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+  header {
+    /* Customize the background color and padding */
+    background-color: #8a1599;
+    padding: 1rem;
+    }
+    
+    .container {
+    /* Center the contents horizontally */
+    display: flex;
+    justify-content: space-between;
+    align-items: right;
+   
+    }
+    
+    nav a {
+    /* Apply styles to the navigation links */
+    color: white;
+    transition: color 0.3s;
+    padding: 10px;
+    }
+    
+    nav a:hover {
+    /* Change text color on hover */
+    color: #d1d5db;
+    padding: 10px;
+    }
+  
+  /* components/Banner.css */
+  .banner {
+  display: flex;
+  align-items: center;
+  background-color: #f7fafc;
+  padding: 1rem;
+  }
+  
+  .banner .left-side {
+  width: 50%;
+  }
+  
+  .banner .left-side h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  }
+  
+  .banner .left-side p {
+  font-size: 1rem;
+  color: #666;
+  margin-top: 1rem;
+  }
+  
+  .banner .right-side {
+  width: 50%;
+  }
+  
+  .banner .right-side img {
+  width: 100%;
+  height: auto;
+  }
+  
+  /* components/CardSection.css */
+  .card-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 1rem;
+
+  }
+  
+  .card {
+    flex: 0 0 calc(50% - 1rem);
+   
+  width: 50%;
+  padding: 1rem;
+  background-color: #ecdaa9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+   border: #333;
+    border-radius: 20px;
+  margin-bottom: 1rem;
+
+  }
+  
+  .card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+  }
+  
+  .card-description {
+  color: #666;
+  margin-top: 0.5rem;
+  }
+  
+  /* components/ReviewSection.css */
+  .review-section {
+  background-color: #f373ed;
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items:self-start;
+  }
+  
+  .review-section h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  }
+  
+  .review-section .review {
+  display: flex;
+  align-items:center;
+  margin-top: 0.5rem;
+  }
+  
+  .review-section .review img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+
+  }
+  
+  .review-section .review p {
+  margin: 0;
+  }
+  
+  /* components/Footer.css */
+  footer {
+  background-color: #ae70e0;
+  color: #fff;
+  padding: 1rem;
+  }
+  
+  footer p {
+  font-size: 0.8rem;
+  text-align: center;
+  }
+  
+  /* Custom CSS */
+  .container {
+  margin-top: 2rem;
+  }
+  
+  @media (min-width: 768px) {
+  .banner .left-side h1 {
+  font-size: 3rem;
+  }
+  
+  .card {
+  width: calc(50% - 1rem);
+  }
+  }
