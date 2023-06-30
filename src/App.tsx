@@ -141,7 +141,7 @@ const App: React.FC = () => {
 
 
             </div>
-         <div style={{marginLeft:'50px', display:'flex', flexDirection:'row'}}>
+         <div style={{marginLeft:'50px'}}>
             <ReviewSection /></div>  
             <Footer />
         </div>
